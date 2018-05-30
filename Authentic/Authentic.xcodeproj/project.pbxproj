@@ -12,9 +12,14 @@
 		20A0CFDC20BF29340021E3DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20A0CFDA20BF29340021E3DE /* Main.storyboard */; };
 		20A0CFDE20BF29350021E3DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20A0CFDD20BF29350021E3DE /* Assets.xcassets */; };
 		20A0CFE120BF29350021E3DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20A0CFDF20BF29350021E3DE /* LaunchScreen.storyboard */; };
+		20B971FA20BF2FFD000FF11C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B971F920BF2FFD000FF11C /* R.generated.swift */; };
+		20B971FE20BF306A000FF11C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20B971FD20BF306A000FF11C /* Localizable.strings */; };
+		3A1D76B9CD6D11D97FB98E62 /* Pods_Authentic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 674968B899B978A193DCA93E /* Pods_Authentic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		075A2FD5AA02C75B2EDA9305 /* Pods-Authentic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Authentic.release.xcconfig"; path = "Pods/Target Support Files/Pods-Authentic/Pods-Authentic.release.xcconfig"; sourceTree = "<group>"; };
+		0D34C238C0BA8AD4E62096B5 /* Pods-Authentic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Authentic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Authentic/Pods-Authentic.debug.xcconfig"; sourceTree = "<group>"; };
 		20A0CFD320BF29340021E3DE /* Authentic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Authentic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20A0CFD620BF29340021E3DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20A0CFD820BF29340021E3DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		20A0CFDD20BF29350021E3DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20A0CFE020BF29350021E3DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20A0CFE220BF29350021E3DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20B971F920BF2FFD000FF11C /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		20B971FD20BF306A000FF11C /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		674968B899B978A193DCA93E /* Pods_Authentic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Authentic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A1D76B9CD6D11D97FB98E62 /* Pods_Authentic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				20A0CFD520BF29340021E3DE /* Authentic */,
 				20A0CFD420BF29340021E3DE /* Products */,
+				75F36EB924D4FD42E5D548DD /* Pods */,
+				8CA5BC8C5DDB70AE51DD796B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +67,39 @@
 			children = (
 				20A0CFD620BF29340021E3DE /* AppDelegate.swift */,
 				20A0CFD820BF29340021E3DE /* ViewController.swift */,
-				20A0CFDA20BF29340021E3DE /* Main.storyboard */,
+				20B971FB20BF3012000FF11C /* Storyboards */,
 				20A0CFDD20BF29350021E3DE /* Assets.xcassets */,
-				20A0CFDF20BF29350021E3DE /* LaunchScreen.storyboard */,
+				20B971FD20BF306A000FF11C /* Localizable.strings */,
+				20B971F920BF2FFD000FF11C /* R.generated.swift */,
 				20A0CFE220BF29350021E3DE /* Info.plist */,
 			);
 			path = Authentic;
+			sourceTree = "<group>";
+		};
+		20B971FB20BF3012000FF11C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				20A0CFDA20BF29340021E3DE /* Main.storyboard */,
+				20A0CFDF20BF29350021E3DE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		75F36EB924D4FD42E5D548DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D34C238C0BA8AD4E62096B5 /* Pods-Authentic.debug.xcconfig */,
+				075A2FD5AA02C75B2EDA9305 /* Pods-Authentic.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8CA5BC8C5DDB70AE51DD796B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				674968B899B978A193DCA93E /* Pods_Authentic.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +109,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20A0CFE520BF29350021E3DE /* Build configuration list for PBXNativeTarget "Authentic" */;
 			buildPhases = (
+				27F7319E311608AAAD37BB74 /* [CP] Check Pods Manifest.lock */,
+				20B971F720BF2DC5000FF11C /* ShellScript */,
+				20B971F820BF2FC2000FF11C /* ShellScript */,
 				20A0CFCF20BF29340021E3DE /* Sources */,
 				20A0CFD020BF29340021E3DE /* Frameworks */,
 				20A0CFD120BF29340021E3DE /* Resources */,
+				B5B424EF234D42E8DA689B05 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20A0CFE120BF29350021E3DE /* LaunchScreen.storyboard in Resources */,
+				20B971FE20BF306A000FF11C /* Localizable.strings in Resources */,
 				20A0CFDE20BF29350021E3DE /* Assets.xcassets in Resources */,
 				20A0CFDC20BF29340021E3DE /* Main.storyboard in Resources */,
 			);
@@ -144,6 +187,55 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
+		20B971F820BF2FC2000FF11C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
+		};
+		27F7319E311608AAAD37BB74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Authentic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5B424EF234D42E8DA689B05 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Authentic/Pods-Authentic-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Authentic/Pods-Authentic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -153,6 +245,7 @@
 			files = (
 				20A0CFD920BF29340021E3DE /* ViewController.swift in Sources */,
 				20A0CFD720BF29340021E3DE /* AppDelegate.swift in Sources */,
+				20B971FA20BF2FFD000FF11C /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +387,7 @@
 		};
 		20A0CFE620BF29350021E3DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D34C238C0BA8AD4E62096B5 /* Pods-Authentic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,6 +406,7 @@
 		};
 		20A0CFE720BF29350021E3DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 075A2FD5AA02C75B2EDA9305 /* Pods-Authentic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
