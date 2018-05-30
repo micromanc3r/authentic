@@ -20,8 +20,9 @@ class MapViewController: UIViewController {
         
         title = R.string.localizable.m1_title()
         
-        doubleTapCatcher = MapViewDoubleTapCatcher(forMapView: mapView) { _ in
+        doubleTapCatcher = MapViewDoubleTapCatcher(forMapView: mapView) { locationCoordinates in
             if let weatherDetailViewController = R.storyboard.main.weather_detail() {
+                weatherDetailViewController.locationCoordinates = locationCoordinates
                 self.navigationController?.pushViewController(weatherDetailViewController,
                                                               animated: true)
             }

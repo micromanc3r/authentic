@@ -73,10 +73,17 @@ struct R: Rswift.Validatable {
   
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 1 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 2 localization keys.
     struct localizable {
+      /// Value: No location
+      static let m2_title_empty = Rswift.StringResource(key: "m2_title_empty", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Weather app
       static let m1_title = Rswift.StringResource(key: "m1_title", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      
+      /// Value: No location
+      static func m2_title_empty(_: Void = ()) -> String {
+        return NSLocalizedString("m2_title_empty", bundle: R.hostingBundle, comment: "")
+      }
       
       /// Value: Weather app
       static func m1_title(_: Void = ()) -> String {
@@ -130,14 +137,14 @@ struct _R: Rswift.Validatable {
       
       let bundle = R.hostingBundle
       let name = "Main"
-      let weather_detail = StoryboardViewControllerResource<UIKit.UIViewController>(identifier: "weather_detail")
+      let weather_detail = StoryboardViewControllerResource<WeatherDetailViewController>(identifier: "weather_detail")
       
-      func weather_detail(_: Void = ()) -> UIKit.UIViewController? {
+      func weather_detail(_: Void = ()) -> WeatherDetailViewController? {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: weather_detail)
       }
       
       static func validate() throws {
-        if _R.storyboard.main().weather_detail() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'weather_detail' could not be loaded from storyboard 'Main' as 'UIKit.UIViewController'.") }
+        if _R.storyboard.main().weather_detail() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'weather_detail' could not be loaded from storyboard 'Main' as 'WeatherDetailViewController'.") }
       }
       
       fileprivate init() {}

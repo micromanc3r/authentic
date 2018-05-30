@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="661.60000000000002" y="189.3553223388306"/>
         </scene>
-        <!--View Controller-->
+        <!--Weather Detail View Controller-->
         <scene sceneID="LrK-dd-9aS">
             <objects>
-                <viewController storyboardIdentifier="weather_detail" id="3am-UZ-5wA" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="weather_detail" id="3am-UZ-5wA" customClass="WeatherDetailViewController" customModule="Authentic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gzj-Xn-llu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
