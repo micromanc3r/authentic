@@ -9,3 +9,4 @@
 "m1_title" = "Weather app";
 
 "m2_title_empty" = "No location";
+"m2_title_noname" = "Unknown";
