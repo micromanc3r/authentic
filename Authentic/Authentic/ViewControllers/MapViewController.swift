@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MapViewController.swift
 //  Authentic
 //
 //  Created by Miroslav Sliacky on 30/05/2018.
@@ -7,11 +7,16 @@
 //
 
 import UIKit
+import MapKit
 
-class ViewController: UIViewController {
+class MapViewController: UIViewController {
 
+    @IBOutlet weak var mapView: MKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = R.string.localizable.m1_title()
     }
 
 }
