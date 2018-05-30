@@ -14,6 +14,11 @@ class WeatherDetailViewController: UIViewController {
     var locationCoordinates: CLLocationCoordinate2D?
     let downloader = WeatherDetailDownloader()
     
+    @IBOutlet weak var windLabel: UILabel!
+    @IBOutlet weak var humidityLabel: UILabel!
+    @IBOutlet weak var pressureLabel: UILabel!
+    @IBOutlet weak var temperatureLabel: UILabel!
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -34,10 +39,20 @@ class WeatherDetailViewController: UIViewController {
     
     func showEmptyView() {
         title = R.string.localizable.m2_title_empty()
+        
+        windLabel.text = ""
+        humidityLabel.text = ""
+        pressureLabel.text = ""
+        temperatureLabel.text = ""
     }
     
     func show(_ weatherDetail: WeatherDetail) {
         title = weatherDetail.name ?? R.string.localizable.m2_title_noname()
+        
+        windLabel.text = "\(weatherDetail.wind?.speed ?? 0.0) m/s"
+        humidityLabel.text = "\(weatherDetail.main?.humidity ?? 0.0) %"
+        pressureLabel.text = "\(weatherDetail.main?.pressure ?? 0.0) hPa"
+        temperatureLabel.text = "\(weatherDetail.main?.temp ?? 0.0) °C"
     }
 
 }
