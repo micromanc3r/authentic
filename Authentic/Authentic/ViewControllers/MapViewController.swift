@@ -28,4 +28,14 @@ class MapViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction func loadLastLocation(_ sender: Any) {
+        if let lastLocationWeatherDetail = WeatherDetail.cachedWeatherDetail() {
+            if let weatherDetailViewController = R.storyboard.main.weather_detail() {
+                weatherDetailViewController.lastWeatherDetail = lastLocationWeatherDetail
+                self.navigationController?.pushViewController(weatherDetailViewController,
+                                                              animated: true)
+            }
+        }
+    }
 }

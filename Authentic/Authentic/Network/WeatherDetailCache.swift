@@ -15,7 +15,7 @@ extension WeatherDetail {
         }
     }
     
-    func cachedWeatherDetail() -> WeatherDetail? {
+    static func cachedWeatherDetail() -> WeatherDetail? {
         guard let data = UserDefaults.standard.data(forKey: Constants.Cache.lastRequestKey) else {
             return nil
         }

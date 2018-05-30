@@ -12,6 +12,7 @@ import CoreLocation
 class WeatherDetailViewController: UIViewController {
 
     var locationCoordinates: CLLocationCoordinate2D?
+    var lastWeatherDetail: WeatherDetail?
     let downloader = WeatherDetailDownloader()
     
     @IBOutlet weak var windLabel: UILabel!
@@ -21,6 +22,11 @@ class WeatherDetailViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        if let lastWeatherDetail = lastWeatherDetail {
+            show(lastWeatherDetail)
+            return
+        }
         
         guard let locationCoordinates = locationCoordinates else {
             showEmptyView()
@@ -53,6 +59,8 @@ class WeatherDetailViewController: UIViewController {
         humidityLabel.text = "\(weatherDetail.main?.humidity ?? 0.0) %"
         pressureLabel.text = "\(weatherDetail.main?.pressure ?? 0.0) hPa"
         temperatureLabel.text = "\(weatherDetail.main?.temp ?? 0.0) °C"
+        
+        weatherDetail.cache()
     }
 
 }
