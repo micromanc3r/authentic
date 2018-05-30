@@ -17,4 +17,8 @@ struct Constants {
     struct Cache {
         static let lastRequestKey = "last_weather_detail_key"
     }
+    
+    struct Map {
+        static let zoomSpan = 0.7
+    }
 }
